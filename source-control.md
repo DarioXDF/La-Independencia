@@ -9,6 +9,11 @@
 
 ## How to Use it
 
+for Informations:
+
+1. open git bash in project folder
+2. git status
+
 ### Save Changes
 
 1. open git bash in project folder
