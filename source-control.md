@@ -7,16 +7,16 @@
 4. Click: git bash hear
   5. git clone https://github.com/DarioXDF/polygon-game-studio
 
-### How to Use it
+## How to Use it
 
-#### Save Changes
+### Save Changes
 
 1. open git bash in project folder
   2. git add .
   3. git commit -m "udate massage like: Dario-Ship_movement-update"
   4. git push
   
-##### Load Changes
+### Load Changes
 
 1. open git bash in project folder
   2. git pull
