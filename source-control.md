@@ -9,7 +9,7 @@
 
 ## How to Use it
 
-for Informations:
+###for Informations:
 
 1. open git bash in project folder
 2. git status
