@@ -25,7 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>gold = 50;
+            <string>//Island Econemy
+gold = 50;
+
+//Island Inventory
 Iron = 0;
 </string>
           </argument>
