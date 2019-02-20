@@ -25,9 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_controlls()
-global.pos = 0
-alarm[0] = 30
+            <string>scr_controlls() //initialize controlls
+global.pos = 0  
+alarm[0] = 30   //Time of Splash screen
 </string>
           </argument>
         </arguments>
@@ -50,7 +50,7 @@ alarm[0] = 30
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(4)
+            <string>room_goto(4); //Main Menu
 </string>
           </argument>
         </arguments>

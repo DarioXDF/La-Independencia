@@ -83,13 +83,13 @@ else
             global.c_right_display = input
         }
         
-        if(global.pos = 4)
+        if(global.pos = 5)
         {
             global.c_debug = ord(input)
             global.c_debug_display = input
         }
         
-        if(global.pos = 4)
+        if(global.pos = 6)
         {
             global.c_interact = ord(input)
             global.c_interact_display = input

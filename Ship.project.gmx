@@ -6,10 +6,18 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\Ship_placeholder</sprite>
-    <sprite>sprites\spr_island_placeholder</sprite>
-    <sprite>sprites\spr_port_placeholder</sprite>
-    <sprite>sprites\spr_curser</sprite>
+    <sprites name="Place Holder">
+      <sprites name="Ships">
+        <sprite>sprites\Ship_placeholder</sprite>
+      </sprites>
+      <sprites name="Island">
+        <sprite>sprites\spr_island_placeholder</sprite>
+        <sprite>sprites\spr_port_placeholder</sprite>
+      </sprites>
+      <sprites name="msic">
+        <sprite>sprites\spr_curser</sprite>
+      </sprites>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -25,27 +33,30 @@
     <scripts name="tools">
       <script>scripts\scr_check_ports.gml</script>
       <script>scripts\scr_time.gml</script>
-      <script>scripts\scr_save.gml</script>
-      <script>scripts\scr_load.gml</script>
     </scripts>
+    <script>scripts\Room_Info.gml</script>
   </scripts>
   <objects name="objects">
-    <object>objects\obj_island</object>
     <objects name="Actors">
       <object>objects\obj_ship</object>
     </objects>
-    <objects name="Ports">
-      <object>objects\obj_port</object>
-      <object>objects\obj_port_1</object>
-    </objects>
-    <object>objects\obj_default_info</object>
     <objects name="Menus">
       <object>objects\obj_main_menu</object>
       <object>objects\obj_option_menu</object>
       <object>objects\obj_controlls_menu</object>
       <object>objects\obj_input</object>
     </objects>
-    <object>objects\obj_start</object>
+    <objects name="Islands">
+      <objects name="Ports">
+        <object>objects\obj_port</object>
+        <object>objects\obj_port_1</object>
+      </objects>
+      <object>objects\obj_island</object>
+    </objects>
+    <objects name="Tools">
+      <object>objects\obj_start</object>
+      <object>objects\obj_default_info</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
