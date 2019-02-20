@@ -33,6 +33,10 @@
     <scripts name="tools">
       <script>scripts\scr_check_ports.gml</script>
       <script>scripts\scr_time.gml</script>
+      <script>scripts\SaveStringToFile.gml</script>
+      <script>scripts\loadJSONFromFile.gml</script>
+      <script>scripts\scr_save.gml</script>
+      <script>scripts\scr_load.gml</script>
     </scripts>
     <script>scripts\Room_Info.gml</script>
   </scripts>
@@ -54,8 +58,13 @@
       <object>objects\obj_island</object>
     </objects>
     <objects name="Tools">
+      <object>objects\obj_parent_save</object>
       <object>objects\obj_start</object>
       <object>objects\obj_default_info</object>
+      <objects name="Save/Load">
+        <object>objects\obj_save</object>
+        <object>objects\obj_load</object>
+      </objects>
     </objects>
   </objects>
   <rooms name="rooms">
