@@ -32,7 +32,7 @@
 
 if(global.first_start = 0)
 {
-    scr_load("menusave.sav")
+    scr_load("savedgame.sav")
     global.first_start = 1
 }
 

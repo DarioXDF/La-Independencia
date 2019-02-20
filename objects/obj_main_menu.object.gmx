@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>X = 0
 ii = 1      //position of curser
 start = 1   //start positon of curser
 
@@ -65,7 +65,14 @@ scr_main_menu(0)
     case 1:
         if(keyboard_check_pressed(vk_enter))
         {
-            room_goto(6)        
+            if(global.first_start = 1)
+            {
+            room_goto(6)
+            }
+            else
+            {
+            room_goto(1)
+            }        
         }
     break;
     

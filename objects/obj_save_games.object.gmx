@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>menu1 = 0
+            <string>X = 0
+menu1 = 0
 ii = 1
 
 </string>
@@ -149,9 +150,16 @@ switch (ii)
          {
             if(!file_exists("savedgame.sav"))
             {
-                draw_text(200, 150, "No Save game found")
+                
+                X = 120
             }
+            
          }
+         if (X &gt;= 0)
+            {
+                draw_text(200, 150, "No Save game found")
+                X = X - 1
+            }
     break;
     
     case 2:

@@ -1,7 +1,14 @@
 menu = argument0
 
 //arrays
+if(global.first_start = 1)
+{
 menu_main[0] = "Start Game"
+}
+else
+{
+menu_main[0] = "Continue"
+}
 menu_main[1] = "Options"
 menu_main[2] = "Exit"
 
