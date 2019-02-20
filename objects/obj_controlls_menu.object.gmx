@@ -25,8 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>menu = 2
-ii = 1
+            <string>ii = 1
 
 
 
@@ -56,7 +55,7 @@ ii = 1
             <kind>1</kind>
             <string>
 
-scr_main_menu()
+scr_main_menu(2)
 switch (ii)
     {
         case 1:

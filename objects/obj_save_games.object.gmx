@@ -25,13 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-ii = 1      //position of curser
-start = 1   //start positon of curser
-
-
-
-
+            <string>menu1 = 0
+ii = 1
 
 </string>
           </argument>
@@ -55,39 +50,71 @@ start = 1   //start positon of curser
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-scr_main_menu(0)
+            <string>if(menu1 = 0)
+{
+scr_main_menu(3)
 
-
-
- switch (ii)
- {
-    case 1:
+switch (ii)
+    {
+        case 1:
+        
         if(keyboard_check_pressed(vk_enter))
         {
-            room_goto(6)        
+            if(file_exists("savedgame.sav"))
+            {
+                room_goto(1)
+            }
         }
     break;
     
-    case 2:
+        case 2:
         if(keyboard_check_pressed(vk_enter))
         {
-            room_goto(3)       
+            if(!file_exists("savedgame.sav")) 
+           {
+               room_goto(1)
+           }
         }
-    break;
-    
-    case 3:
-        if(keyboard_check_pressed(vk_enter))
-        {
-            game_end()        
-        }
-    break;
-             
+        break
+    }
+
         
 }
+else
+{
+scr_main_menu(4)
+    switch (ii)
+        {
+         case 1:
+            if(keyboard_check_pressed(vk_enter))
+            {
+                file_delete("savedgame.sav")
+                room_goto(1)
+            }
+            
+         break;
+         
+         case 2:
+            if(keyboard_check_pressed(vk_enter))
+            {
+                menu1 = 0
+            }
+         break;
+        }
+}
 
-
-
+if(keyboard_check_pressed(global.c_esc))
+        {
+            if(menu1 = 0)
+            {
+            room_goto(4)
+            }
+            else
+            {
+                menu1 = 0
+            }
+            
+        }
 
 </string>
           </argument>
@@ -111,41 +138,55 @@ scr_main_menu(0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-
-draw_text(50,100,ii)    //Draw Curser Position
-
-
-
- 
- switch (ii)
+            <string>draw_text(50,50,menu1)
+if(menu1 = 0)
+{
+switch (ii)
  {
     case 1:
-        draw_text(170,50,"---&gt;")
+         draw_text(170,50,"---&gt;")
+         if(keyboard_check_pressed(vk_enter))
+         {
+            if(!file_exists("savedgame.sav"))
+            {
+                draw_text(200, 150, "No Save game found")
+            }
+         }
     break;
     
     case 2:
         draw_text(170,70,"---&gt;")
+        if(keyboard_check_pressed(vk_enter))
+        {
+           if(file_exists("savedgame.sav")) 
+           {
+                menu1 = 1
+           }
+        }
     break;
+    }
+
     
-    case 3:
-        draw_text(170,90,"---&gt;")
-    break;
-             
-        
+draw_text(200,50,menu_Load[0])
+draw_text(200,70,menu_Load[1])
 }
 
-draw_text(200,50,menu_main[0])
-draw_text(200,70,menu_main[1])
-draw_text(200,90,menu_main[2])
-
-
-
-
-
- 
-
-
+if(menu1 = 1)
+{
+switch (ii)
+    {
+        case 1:
+        
+            draw_text(170,50,"---&gt;")
+        break;
+        case 2:
+            
+            draw_text(670,50,"---&gt;")
+        break;
+    }
+draw_text(200,50, menu_newgame[0])
+draw_text(700,50, menu_newgame[1])
+}
 </string>
           </argument>
         </arguments>

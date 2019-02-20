@@ -49,6 +49,7 @@
       <object>objects\obj_option_menu</object>
       <object>objects\obj_controlls_menu</object>
       <object>objects\obj_input</object>
+      <object>objects\obj_save_games</object>
     </objects>
     <objects name="Islands">
       <objects name="Ports">
@@ -74,6 +75,7 @@
     <room>rooms\room3</room>
     <room>rooms\room4</room>
     <room>rooms\room5</room>
+    <room>rooms\room6</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
