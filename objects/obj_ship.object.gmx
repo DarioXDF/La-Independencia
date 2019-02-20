@@ -143,6 +143,8 @@ if(keyboard_check_pressed(global.c_debug))
 //back to Menu
 if(keyboard_check_pressed(global.c_esc))
 {
+    scr_save("menusave.sav")
+    global.first_start = 0
     room_goto(4)
 }
 // Player dead

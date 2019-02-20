@@ -28,3 +28,13 @@ if(h == 24)
     h = 0
 }
 
+//Auto Save
+
+countdown ++
+
+if(countdown >= 180) //1800 = 10min
+{
+    scr_save("savedgame.sav")
+    countdown = 0
+}
+
