@@ -1,8 +1,7 @@
 /// @arg "savefile_name.sav"
 save_name = argument0
 
-if(keyboard_check_pressed(ord("K")))
-{
+
 //create a root list
 var _root_list = ds_list_create();
 
@@ -31,6 +30,8 @@ with (obj_parent_save)
         ds_map_add (_map,"obj_ship.sp",0);
         ds_map_add (_map,"obj_ship.y",obj_ship.y);
         ds_map_add (_map,"obj_ship.x",obj_ship.x);
+        ds_map_add (_map,"obj_ship.direction",obj_ship.direction);
+        ds_map_add (_map,"obj_ship.image_angle",obj_ship.image_angle);
         ds_map_add (_map,"obj_ship.max_hp",obj_ship.max_hp);
         ds_map_add (_map,"obj_ship.hp",obj_ship.hp);
         ds_map_add (_map,"obj_ship.ship_speed",obj_ship.ship_speed);
@@ -72,4 +73,4 @@ SaveStringToFile( save_name, _string);
 //Nuke Data
 ds_map_destroy(_wrapper);
 
-}
+

@@ -25,6 +25,8 @@ if (file_exists(save_name))
             obj_ship.sp = _map[? "obj_ship.sp"]
             obj_ship.x = _map[? "obj_ship.x"];
             obj_ship.y = _map[? "obj_ship.y"];
+            obj_ship.direction = _map[? "obj_ship.direction"]
+            obj_ship.image_angle = _map[? "obj_ship.image_angle"]
             obj_ship.max_hp = _map[? "obj_ship.max_hp"];
             obj_ship.hp = _map[? "obj_ship.hp"];
             obj_ship.ship_speed = _map[? "obj_ship.ship_speed"];

@@ -30,6 +30,12 @@
     scr_load("savedgame.sav")
 }
 
+if(global.first_start = 0)
+{
+    scr_load("menusave.sav")
+    global.first_start = 1
+}
+
 
 
 
