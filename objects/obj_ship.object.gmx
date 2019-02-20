@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>obj_parent_save</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -28,7 +28,7 @@
             <string>
 
 
-sp = 1;
+sp = 0;
 max_hp = 1000;
 hp = max_hp;
 ship_speed = 0.10;  //shiff speed für basic_ship
