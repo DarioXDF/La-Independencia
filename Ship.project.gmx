@@ -16,6 +16,7 @@
       </sprites>
       <sprites name="msic">
         <sprite>sprites\spr_curser</sprite>
+        <sprite>sprites\spr_text_box_placeholder</sprite>
       </sprites>
     </sprites>
   </sprites>
@@ -43,6 +44,7 @@
   <objects name="objects">
     <objects name="Actors">
       <object>objects\obj_ship</object>
+      <object>objects\obj_textbox</object>
     </objects>
     <objects name="Menus">
       <object>objects\obj_main_menu</object>
@@ -76,6 +78,7 @@
     <room>rooms\room4</room>
     <room>rooms\room5</room>
     <room>rooms\room6</room>
+    <room>rooms\room7</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
