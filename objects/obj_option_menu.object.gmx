@@ -51,7 +51,7 @@ ii = 1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_main_menu(1)
+            <string>scr_main_menu(1,0,0)
 switch (ii)
     {
         case 1:

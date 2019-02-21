@@ -56,14 +56,14 @@ start = 1   //start positon of curser
           <argument>
             <kind>1</kind>
             <string>
-scr_main_menu(0)
+scr_main_menu(0,0,0)
 
 
 
  switch (ii)
  {
     case 1:
-        if(keyboard_check_pressed(vk_enter))
+        if(keyboard_check_released(vk_enter))
         {
             if(global.first_start = 1)
             {
@@ -77,14 +77,14 @@ scr_main_menu(0)
     break;
     
     case 2:
-        if(keyboard_check_pressed(vk_enter))
+        if(keyboard_check_released(vk_enter))
         {
             room_goto(3)       
         }
     break;
     
     case 3:
-        if(keyboard_check_pressed(vk_enter))
+        if(keyboard_check_released(vk_enter))
         {
             game_end()        
         }

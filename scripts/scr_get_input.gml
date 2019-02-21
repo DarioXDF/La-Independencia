@@ -157,7 +157,8 @@
     }
 
 // Enter,Feile Usw...
-
+if(vk_input != 0)
+{
     if(keyboard_check_pressed(vk_alt))
     {
         input_abfrage = 0;
@@ -187,6 +188,7 @@ if(keyboard_check_pressed(global.c_esc))
            room_goto(5)
             
             
+        }
         }
     
     //........

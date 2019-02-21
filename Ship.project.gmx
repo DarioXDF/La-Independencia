@@ -16,7 +16,6 @@
       </sprites>
       <sprites name="msic">
         <sprite>sprites\spr_curser</sprite>
-        <sprite>sprites\spr_text_box_placeholder</sprite>
       </sprites>
     </sprites>
   </sprites>
@@ -44,14 +43,13 @@
   <objects name="objects">
     <objects name="Actors">
       <object>objects\obj_ship</object>
-      <object>objects\obj_textbox</object>
     </objects>
     <objects name="Menus">
       <object>objects\obj_main_menu</object>
       <object>objects\obj_option_menu</object>
       <object>objects\obj_controlls_menu</object>
-      <object>objects\obj_input</object>
       <object>objects\obj_save_games</object>
+      <object>objects\obj_new_game</object>
     </objects>
     <objects name="Islands">
       <objects name="Ports">
@@ -61,12 +59,15 @@
       <object>objects\obj_island</object>
     </objects>
     <objects name="Tools">
-      <object>objects\obj_parent_save</object>
-      <object>objects\obj_start</object>
-      <object>objects\obj_default_info</object>
       <objects name="Save/Load">
         <object>objects\obj_save</object>
         <object>objects\obj_load</object>
+        <object>objects\obj_parent_save</object>
+      </objects>
+      <objects name="Setup">
+        <object>objects\obj_start</object>
+        <object>objects\obj_default_info</object>
+        <object>objects\obj_input</object>
       </objects>
     </objects>
   </objects>

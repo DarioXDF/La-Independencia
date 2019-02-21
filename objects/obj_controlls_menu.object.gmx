@@ -55,7 +55,7 @@
             <kind>1</kind>
             <string>
 
-scr_main_menu(2)
+scr_main_menu(2,0,0)
 switch (ii)
     {
         case 1:

@@ -34,6 +34,9 @@ if (file_exists(save_name))
             //Inventory
             obj_ship.gold = _map[? "obj_ship.gold"];
             
+        //Player
+            obj_ship.name = _map[? "obj_ship.name"]
+            
         //Port
             //Island Economy
             obj_port.gold = _map[? "obj_port.gold"]

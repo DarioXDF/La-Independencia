@@ -25,7 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>if(!file_exists("savedgame.sav") ) 
+{
+    name = global.name
+}
+else
+{
+    name = ""
+}
+
+
 
 
 sp = 0;
@@ -272,6 +281,7 @@ if(Debug = 1)
     draw_text(180,150,obj_port.Iron)
     draw_text(50,170,"Iron_Mine:")
     draw_text(180,170,obj_port.Iron_mine)
+    draw_text(180,190,name)
 }
 
 //Interact

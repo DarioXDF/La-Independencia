@@ -1,4 +1,6 @@
 menu = argument0
+dirc = argument1
+length = argument2
 
 //arrays
 if(global.first_start = 1)
@@ -64,10 +66,17 @@ i = array_length_1d(menu_newgame)
 dirc = 1
 }
 
+if(menu = "none")
+{
+    i = length
+}
+
+
+
 // move menu curser UD
 if(dirc == 0)
 {
-if(keyboard_check_pressed(ord("W")))
+if(keyboard_check_pressed(global.c_menu_up))
 {
  if(ii != 1)
  {
@@ -81,7 +90,7 @@ if(keyboard_check_pressed(ord("W")))
     
  }
  }
- if(keyboard_check_pressed(ord("S")))
+ if(keyboard_check_pressed(global.c_menu_down))
  {
     
     if(ii != i)
@@ -100,7 +109,7 @@ if(keyboard_check_pressed(ord("W")))
  }
  else //Move LR
  {
-    if(keyboard_check_pressed(ord("A")))
+    if(keyboard_check_pressed(global.c_menu_left))
 {
  if(ii != 1)
  {
@@ -114,7 +123,7 @@ if(keyboard_check_pressed(ord("W")))
     
  }
  }
- if(keyboard_check_pressed(ord("D")))
+ if(keyboard_check_pressed(global.c_menu_right))
  {
     
     if(ii != i)

@@ -14,4 +14,9 @@ global.c_debug_display  =       "P"
 global.c_interact_display   =   "F"
 global.c_esc_display    =       "Esc"
 
+global.c_menu_up = vk_up
+global.c_menu_down = vk_down
+global.c_menu_left = vk_left
+global.c_menu_right = vk_right
+
 
