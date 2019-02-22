@@ -39,6 +39,50 @@ for(i = 0; i&lt;20; i++)
 }
 
 pos[20] = 1
+
+//anzahl der möglichkeiten
+
+hair_styles = 0
+hair_colors = 0
+eye_styles  = 0
+eye_colors  = 0
+mouth_style = 0
+head_style  = 0
+body_style  = 0
+skin_color  = 0
+
+//array char
+    //ebene 0 = gender
+        char[0,0] = male
+        char[0,1] = female
+    //ebene 1 = hair style
+        char[1,0] = standard                                    hair_styles++
+    //ebene 2 = hair color
+        char[2,0] = spr_hair_placeholder_black                  hair_colors++
+        char[2,1] = spr_hair_placeholder_yellow                 hair_colors++
+        char[2,2] = spr_hair_placeholder_green                  hair_colors++
+        char[2,3] = spr_hair_placeholder_purplegray             hair_colors++  
+    //ebene 3 = eye style
+        char[3,0] = standard                                    eye_styles++
+    //ebene 4 = eye color
+        char[4,0] = spr_eyes_placeholder_white                  eye_color++
+        char[4,1] = spr_eyes_placeholder_green                  eye_color++
+        char[4,2] = spr_eyes_placeholder_darkblue               eye_color++
+        char[4,3] = spr_eyes_placeholder_purplegray             eye_color++
+    //ebene 5 = mouth style
+        char[5,0] = spr_mouth_placeholder                       mouth_style++
+    //ebene 6 = Head
+        char[6,0] = spr_head_placeholder                        head_style++
+        char[6,1] = spr_head_placeholder_1                      head_style++
+        char[6,2] = spr_head_placeholder_2                      head_style++
+        char[6,3] = spr_head_placeholder_3                      head_style++
+    //ebene 7 = Body
+        char[7,0] = spr_body_placeholder                        body_style++
+        char[7,1] = spr_body_placeholder_1                      body_style++
+        char[7,2] = spr_body_placeholder_2                      body_style++
+        char[7,3] = spr_body_placeholder_3                      body_style++                              
+    //ebene 8 = skin color
+        char[8,0] = ""                                          skin_color++
 </string>
           </argument>
         </arguments>
@@ -275,6 +319,10 @@ if(pos[19] != 0)
 {
     draw_text(200 + 15 * (20 - 1), 50, pos[19])   
 }
+
+//Character Editor
+
+    
 
 
 

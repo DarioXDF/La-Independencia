@@ -17,6 +17,39 @@
       <sprites name="msic">
         <sprite>sprites\spr_curser</sprite>
       </sprites>
+      <sprites name="Player">
+        <sprites name="Hair">
+          <sprites name="Standard">
+            <sprite>sprites\spr_hair_placeholder_black</sprite>
+            <sprite>sprites\spr_hair_placeholder_yellow</sprite>
+            <sprite>sprites\spr_hair_placeholder_green</sprite>
+            <sprite>sprites\spr_hair_placeholder_purplegray</sprite>
+          </sprites>
+        </sprites>
+        <sprites name="Head">
+          <sprite>sprites\spr_head_placeholder</sprite>
+          <sprite>sprites\spr_head_placeholder_1</sprite>
+          <sprite>sprites\spr_head_placeholder_2</sprite>
+          <sprite>sprites\spr_head_placeholder_3</sprite>
+        </sprites>
+        <sprites name="Eyes">
+          <sprites name="standard">
+            <sprite>sprites\spr_eyes_placeholder_white</sprite>
+            <sprite>sprites\spr_eyes_placeholder_green</sprite>
+            <sprite>sprites\spr_eyes_placeholder_darkblue</sprite>
+            <sprite>sprites\spr_eyes_placeholder_purplegray</sprite>
+          </sprites>
+        </sprites>
+        <sprites name="Body">
+          <sprite>sprites\spr_body_placeholder</sprite>
+          <sprite>sprites\spr_body_placeholder_1</sprite>
+          <sprite>sprites\spr_body_placeholder_2</sprite>
+          <sprite>sprites\spr_body_placeholder_3</sprite>
+        </sprites>
+        <sprites name="Mouth">
+          <sprite>sprites\spr_mouth_placeholder</sprite>
+        </sprites>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
