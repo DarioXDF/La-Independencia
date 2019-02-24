@@ -26,63 +26,114 @@
           <argument>
             <kind>1</kind>
             <string>name_set = 0
-name = ""
+user_name = ""
+first_name = ""
+last_name = ""
+
 lchar = 0
 ii = 1
 input_abfrage = 0
 input = 0
 vk_input = 0
+curser_line = 0
+char_editor = 0
+b = 0 // anzahl der einträge
+c = 0 // position in array
+
+
+
+char_x = 200
+char_y = 300
+char_scale = 4
+
+
+editor_y = 0
+for(i = 0; i &lt; 9; i++)
+{
+   editor_x[i] = 0 
+}
+
 
 for(i = 0; i&lt;20; i++)
 {
     pos[i] = 0
 }
 
+for(i = 0; i&lt;20; i++)
+{
+    pos_first[i] = 0
+}
+
+for(i = 0; i&lt;20; i++)
+{
+    pos_last[i] = 0
+}
+
 pos[20] = 1
+pos_first[20] = 1
+pos_last[20] = 1
 
 //anzahl der möglichkeiten
 
-hair_styles = 0
-hair_colors = 0
-eye_styles  = 0
-eye_colors  = 0
-mouth_style = 0
-head_style  = 0
-body_style  = 0
-skin_color  = 0
+
 
 //array char
     //ebene 0 = gender
-        char[0,0] = male
-        char[0,1] = female
+        char[0,0] = "Male"
+        char[0,1] = "Female"
     //ebene 1 = hair style
-        char[1,0] = standard                                    hair_styles++
+        char[1,0] = "standard"                                  
     //ebene 2 = hair color
-        char[2,0] = spr_hair_placeholder_black                  hair_colors++
-        char[2,1] = spr_hair_placeholder_yellow                 hair_colors++
-        char[2,2] = spr_hair_placeholder_green                  hair_colors++
-        char[2,3] = spr_hair_placeholder_purplegray             hair_colors++  
+        char[2,0] = spr_hair_placeholder_black                  
+        char[2,1] = spr_hair_placeholder_yellow                 
+        char[2,2] = spr_hair_placeholder_green                 
+        char[2,3] = spr_hair_placeholder_purplegray               
     //ebene 3 = eye style
-        char[3,0] = standard                                    eye_styles++
+        char[3,0] = "standard"                                  
     //ebene 4 = eye color
-        char[4,0] = spr_eyes_placeholder_white                  eye_color++
-        char[4,1] = spr_eyes_placeholder_green                  eye_color++
-        char[4,2] = spr_eyes_placeholder_darkblue               eye_color++
-        char[4,3] = spr_eyes_placeholder_purplegray             eye_color++
+        char[4,0] = spr_eyes_placeholder_white                 
+        char[4,1] = spr_eyes_placeholder_green                  
+        char[4,2] = spr_eyes_placeholder_darkblue               
+        char[4,3] = spr_eyes_placeholder_purplegray             
     //ebene 5 = mouth style
-        char[5,0] = spr_mouth_placeholder                       mouth_style++
+        char[5,0] = spr_mouth_placeholder                       
     //ebene 6 = Head
-        char[6,0] = spr_head_placeholder                        head_style++
-        char[6,1] = spr_head_placeholder_1                      head_style++
-        char[6,2] = spr_head_placeholder_2                      head_style++
-        char[6,3] = spr_head_placeholder_3                      head_style++
+        char[6,0] = spr_head_placeholder                        
+        char[6,1] = spr_head_placeholder_1                      
+        char[6,2] = spr_head_placeholder_2                      
+        char[6,3] = spr_head_placeholder_3                      
     //ebene 7 = Body
-        char[7,0] = spr_body_placeholder                        body_style++
-        char[7,1] = spr_body_placeholder_1                      body_style++
-        char[7,2] = spr_body_placeholder_2                      body_style++
-        char[7,3] = spr_body_placeholder_3                      body_style++                              
+        char[7,0] = spr_body_placeholder                        
+        char[7,1] = spr_body_placeholder_1                      
+        char[7,2] = spr_body_placeholder_2                      
+        char[7,3] = spr_body_placeholder_3                                                    
     //ebene 8 = skin color
-        char[8,0] = ""                                          skin_color++
+        char[8,0] = ""   
+        char[8,1] = ""                                     
+    //options     
+    char[9,0] = "Gender:"
+    char[9,1] = "Hair Style:"
+    char[9,2] = "Hair Color:"
+    char[9,3] = "Eye Style:"
+    char[9,4] = "Eye Color:"
+    char[9,5] = "Mouth Style:"
+    char[9,6] = "Head Type:"
+    char[9,7] = "Body Type:"
+    char[9,8] = "Skin Color:"
+    
+    //hair colors
+    char[10,0] = "Black"
+    char[10,1] = "Yellow"
+    char[10,2] = "Green"
+    char[10,3] = "Purplegray"
+    
+    //eye colors
+    char[11,0] = "white"
+    char[11,1] = "green"
+    char[11,2] = "darkblue"
+    char[11,3] = "purplegray"
+    
+   
 </string>
           </argument>
         </arguments>
@@ -106,16 +157,49 @@ skin_color  = 0
           <argument>
             <kind>1</kind>
             <string>scr_get_input()
-if(input != 0 &amp;&amp; ii != 22 )
-{
-    switch(ii)
-    {
-        case ii:
-            if(ii != 21) pos[ii - 1] = input
-        break;
-    }
-    input = 0
+switch(curser_line)
+{   
+    case 0:
+        if(input != 0 &amp;&amp; ii != 22 )
+        {
+            switch(ii)
+            {
+                case ii:
+                    if(ii != 21) pos[ii - 1] = input
+                break;
+            }
+            input = 0
     
+        }
+    break;
+    
+    case 1:
+        if(input != 0 &amp;&amp; ii != 22 )
+        {
+            switch(ii)
+            {
+                case ii:
+                    if(ii != 21) pos_first[ii - 1] = input
+                break;
+            }
+            input = 0
+    
+        }
+    break;
+    
+    case 2:
+        if(input != 0 &amp;&amp; ii != 22 )
+        {
+            switch(ii)
+            {
+                case ii:
+                    if(ii != 21) pos_last[ii - 1] = input
+                break;
+            }
+            input = 0
+    
+        }
+    break;
 }
 </string>
           </argument>
@@ -140,189 +224,396 @@ if(input != 0 &amp;&amp; ii != 22 )
           <argument>
             <kind>1</kind>
             <string>draw_text(50,50,"Enter user Name:")
-draw_text(200,52,"_")
-draw_text(215,52,"_")
-draw_text(230,52,"_")
-draw_text(245,52,"_")
-draw_text(260,52,"_")
-draw_text(275,52,"_")
-draw_text(290,52,"_")
-draw_text(305,52,"_")
-draw_text(320,52,"_")
-draw_text(335,52,"_")
-draw_text(350,52,"_")
-draw_text(365,52,"_")
-draw_text(380,52,"_")
-draw_text(395,52,"_")
-draw_text(410,52,"_")
-draw_text(425,52,"_")
-draw_text(440,52,"_")
-draw_text(455,52,"_")
-draw_text(470,52,"_")
-draw_text(485,52,"_")
+for(i = 0; i &lt; 20; i++)
+{
+    draw_text(200 + 15 * i,52,"_")
+}
 
-draw_text(200,72,name)
-draw_text(146,72,"Name:")
+draw_text(50,80,"Enter First Name:")
+for(i = 0; i &lt; 20; i++)
+{
+    draw_text(200 + 15 * i,82,"_")
+}
+
+draw_text(50,110,"Enter Last Name:")
+for(i = 0; i &lt; 20; i++)
+{
+    draw_text(200 + 15 * i,112,"_")
+}
 
 
 
 scr_main_menu("none",1,20)
 //enter name
-if(keyboard_check_pressed(vk_enter))
+if(keyboard_check_released(global.c_menu_up) &amp;&amp; curser_line != 0)
 {
-    if(name_set = 1)
-    {
-        name = ""
-    }
-    for(i = 0; i&lt;20; i++)
-    {
-        if(pos[i] != 0)
-        {
-            lchar++
-        }
-    }
+    curser_line--
+}
+if(keyboard_check_released(global.c_menu_up) &amp;&amp; char_editor != 0 &amp;&amp; editor_y = 0)
+{
+    char_editor--
+    curser_line = 2
+    
+}
 
-    for(i = 0; i&lt;lchar; i++)
+if(keyboard_check_released(vk_enter) ||  keyboard_check_released(global.c_menu_down))
+{
+    
+    switch(curser_line)
     {
-        name = string(name) + string(pos[i])
+        case 0:
+            if(name_set = 1)
+            {
+                user_name = ""
+            }
+            
+            for(i = 0; i&lt;20; i++)
+            {
+                if(pos[i] != 0)
+                {
+                    lchar++
+                }
+            }
+            
+            for(i = 0; i&lt;lchar; i++)
+            {
+                user_name = string(user_name) + string(pos[i])
+            }
+            
+            if(string_length(string(user_name)) &lt; 4)
+            {
+                for(i = 0; i&lt;20; i++)
+            {
+                if(pos[i] != 0)
+                {
+                    pos[i] = 0
+                }
+                ii = 1
+                user_name = ""
+            }
+            }
+            else
+            {
+            curser_line++
+            ii = 1
+            
+            }
+        break;
+        
+        case 1:
+            if(name_set = 1)
+            {
+                first_name = ""
+            }
+            
+            for(i = 0; i&lt;20; i++)
+            {
+                if(pos_first[i] != 0)
+                {
+                    lchar++
+                }
+            }
+            
+            for(i = 0; i&lt;lchar; i++)
+            {
+                first_name = string(first_name) + string(pos_first[i])
+            }
+        
+            
+            if(string_length(string(first_name)) &lt; 4)
+            {
+                for(i = 0; i&lt;20; i++)
+            {
+                if(pos_first[i] != 0)
+                {
+                    pos_first[i] = 0
+                }
+                ii = 1
+                first_name = ""
+            }
+            }
+            else
+            {
+            curser_line++
+            ii = 1
+            
+            }
+        break;
+        
+        case 2:
+            if(name_set = 1)
+            {
+                last_name = ""
+            }
+            
+            for(i = 0; i&lt;20; i++)
+            {
+                if(pos_last[i] != 0)
+                {
+                    lchar++
+                }
+            }
+            
+            for(i = 0; i&lt;lchar; i++)
+            {
+                last_name = string(last_name) + string(pos_last[i])
+            }
+        
+            if(string_length(string(last_name)) &lt; 4)
+            {
+                for(i = 0; i&lt;20; i++)
+            {
+                if(pos_last[i] != 0)
+                {
+                    pos_last[i] = 0
+                }
+                ii = 1
+                last_name = ""
+            }
+            }
+            else
+            {
+            char_editor = 1
+            
+            }
+            
+        break;
     }
     name_set = 1
     lchar = 0
     
-    global.name = name
-    room_goto(1)
+    
 }
 //Remove
 if(keyboard_check_pressed(vk_backspace) &amp;&amp; ii != 1 )
 {
-    
-    pos[ii - 2] = 0  
-    ii--
+    switch(curser_line)
+    {
+    case 0:
+        pos[ii - 2] = 0  
+        ii--
+    break;
+       
+    case 1:
+        pos_first[ii - 2] = 0  
+        ii--
+    break;
+        
+    case 2:
+        pos_last[ii - 2] = 0  
+        ii--
+    break;
+    }
     
     
 }
 //move in array
-if(pos[ii - 1] != 0)
+switch(curser_line)
 {
-
-    if(ii != 21) ii++
+    case 0:
+        if(pos[ii - 1] != 0)
+        {
+            if(ii != 21) ii++
+        }
+    break;
     
+    case 1:
+        if(pos_first[ii - 1] != 0)
+        {
+            if(ii != 21) ii++
+        }
+    break;
+    
+    case 2:
+        if(pos_last[ii - 1] != 0)
+        {
+            if(ii != 21) ii++
+        }
+    break;
+       
 }
-
     
 
 switch(ii)
 {
     case ii:
-        if(ii - 1 = 0) draw_text(200 ,50,"|") else draw_text(200 + 15 * (ii - 1),50,"|")
+        if(char_editor = 0)
+        {
+        if(ii - 1 = 0) draw_text(200   ,50 + (curser_line * 30),"|")
+        else
+        {
+            draw_text(200 + (ii - 1) * 15  ,50 + (curser_line * 30),"|")
+        }
+        }
     break;
 }
 
 
 //Draw Name
-if(pos[0] != 0)
+
+for(i = 0; i&lt;20; i++)
 {
-    draw_text(200  , 50, pos[0])
+    if(pos[i] !=0)
+    {
+        draw_text(200 + 15 * i , 50,pos[i])
+    }
 }
 
-if(pos[1] != 0)
+for(i = 0; i&lt;20; i++)
 {
-    draw_text(200 + 15 * (2 - 1), 50, pos[1])
+    if(pos_first[i] !=0)
+    {
+        draw_text(200 + 15 * i , 80,pos_first[i])
+    }
 }
 
-if(pos[2] != 0)
+for(i = 0; i&lt;20; i++)
 {
-    draw_text(200 + 15 * (3 - 1), 50, pos[2])
+    if(pos_last[i] !=0)
+    {
+        draw_text(200 + 15 * i , 110,pos_last[i])
+    }
 }
 
-if(pos[3] != 0)
-{
-    draw_text(200 + 15 * (4 - 1), 50, pos[3])
-}
 
-if(pos[4] != 0)
-{
-    draw_text(200 + 15 * (5 - 1), 50, pos[4])
-}
-
-if(pos[5] != 0)
-{
-    draw_text(200 + 15 * (6 - 1), 50, pos[5])
-}
-
-if(pos[6] != 0)
-{
-    draw_text(200 + 15 * (7 - 1), 50, pos[6])
-}
-
-if(pos[7] != 0)
-{
-    draw_text(200 + 15 * (8 - 1), 50, pos[7])
-}
-
-if(pos[8] != 0)
-{
-    draw_text(200 + 15 * (9 - 1), 50, pos[8])
-}
-
-if(pos[9] != 0)
-{
-    draw_text(200 + 15 * (10 - 1), 50, pos[9])
-}
-
-if(pos[10] != 0)
-{
-    draw_text(200 + 15 * (11 - 1), 50, pos[10])
-}
-
-if(pos[11] != 0)
-{
-    draw_text(200 + 15 * (12 - 1), 50, pos[11])
-}
-
-if(pos[12] != 0)
-{
-    draw_text(200 + 15 * (13 - 1), 50, pos[12])
-}
-
-if(pos[13] != 0)
-{
-    draw_text(200 + 15 * (14 - 1), 50, pos[13])
-}
-
-if(pos[14] != 0)
-{
-    draw_text(200 + 15 * (15 - 1), 50, pos[14])
-}
-
-if(pos[15] != 0)
-{
-    draw_text(200 + 15 * (16 - 1), 50, pos[15])
-}
-
-if(pos[16] != 0)
-{
-    draw_text(200 + 15 * (17 - 1), 50, pos[16])
-}
-
-if(pos[17] != 0)
-{
-    draw_text(200 + 15 * (18 - 1), 50, pos[17])
-}
-
-if(pos[18] != 0)
-{
-    draw_text(200 + 15 * (19 - 1), 50, pos[18])
-}
-
-if(pos[19] != 0)
-{
-    draw_text(200 + 15 * (20 - 1), 50, pos[19])   
-}
 
 //Character Editor
+draw_sprite_ext(char[7,editor_x[7]],image_index, char_x,char_y, char_scale, char_scale ,image_angle ,image_blend ,image_alpha)
+draw_sprite_ext(char[6,editor_x[6]],image_index, char_x,char_y, char_scale, char_scale ,image_angle ,image_blend ,image_alpha)
+draw_sprite_ext(char[4,editor_x[4]],image_index, char_x,char_y, char_scale, char_scale ,image_angle ,image_blend ,image_alpha)
+draw_sprite_ext(char[5,editor_x[5]],image_index, char_x,char_y, char_scale, char_scale ,image_angle ,image_blend ,image_alpha)
+draw_sprite_ext(char[2,editor_x[2]],image_index, char_x,char_y, char_scale, char_scale ,image_angle ,image_blend ,image_alpha)
 
+
+if(char_editor = 1)
+{
+    if(keyboard_check_released(global.c_menu_down) &amp;&amp; editor_y != 8)
+    {
+        editor_y++
+    }
     
+    if(keyboard_check_released(global.c_menu_up) &amp;&amp; editor_y != 0)
+    {
+        editor_y--
+    }
+    
+    if(keyboard_check_released(global.c_menu_left) &amp;&amp; editor_x[editor_y] != 0)
+    {
+        editor_x[editor_y] --
+    }
+    
+    if(keyboard_check_released(global.c_menu_right))
+    {
+        if(editor_x[editor_y] != array_length_2d(char,editor_y) - 1)
+        {
+            editor_x[editor_y] ++
+        }
+        else
+        {
+            editor_x[editor_y] = 0
+        }
+    }
+    draw_text(20,450 + editor_y * 30, "---&gt;")
+    
+    if(keyboard_check_released(vk_space))
+    {
+        var _start_list = ds_list_create();
+        with (obj_new_game)
+        {
+            var _start = ds_map_create();
+            ds_list_add(_start_list,_start)
+            ds_list_mark_as_map(_start_list,ds_list_size(_start_list)-1);
+            
+            //save data
+                    char_pos_0 = array_length_2d(char, 0)
+                    char_pos_1 = array_length_2d(char, 1)
+                    char_pos_2 = array_length_2d(char, 2)
+                    char_pos_3 = array_length_2d(char, 3)
+                    char_pos_4 = array_length_2d(char, 4)
+                    char_pos_5 = array_length_2d(char, 5)
+                    char_pos_6 = array_length_2d(char, 6)
+                    char_pos_7 = array_length_2d(char, 7)
+                    char_pos_8 = array_length_2d(char, 8)
+                    char_pos_9 = array_length_2d(char, 9)
+                    char_pos_10 = array_length_2d(char, 10)
+                    char_pos_11 = array_length_2d(char, 11)
+                //char[]
+                   
+                    b = array_height_2d(char) 
+                                      
+                    
+                    
+                    for(i = 0; i &lt; array_height_2d(char)  ; i++ )
+                    {
+                        for(iii = 0; iii &lt; array_length_2d(char,i) ; iii++)
+                        {
+                            position = string("char[") + string(i) + string(",") + string(iii) + string("]")
+                            ds_map_add (_start, position, char[i,iii])
+                            
+                        }
+                        
+                        
+                        
+                    }
+                    d = array_length_1d(editor_x)
+                    for(i = 0; i &lt; array_length_1d(editor_x); i++)
+                    {
+                        position = string("editor_x[") + string(i) + string("]")
+                        ds_map_add (_start, position, editor_x[i])
+                    }
+                   
+            ds_map_add (_start,"user_name", user_name)
+            ds_map_add (_start,"first_name", first_name)
+            ds_map_add (_start,"last_name", last_name)
+            ds_map_add (_start,"b", b)
+            ds_map_add (_start,"d", d)
+            ds_map_add (_start,"char_pos_0", char_pos_0)
+            ds_map_add (_start,"char_pos_1", char_pos_1)
+            ds_map_add (_start,"char_pos_2", char_pos_2)
+            ds_map_add (_start,"char_pos_3", char_pos_3)
+            ds_map_add (_start,"char_pos_4", char_pos_4)
+            ds_map_add (_start,"char_pos_5", char_pos_5)
+            ds_map_add (_start,"char_pos_6", char_pos_6)
+            ds_map_add (_start,"char_pos_7", char_pos_7)
+            ds_map_add (_start,"char_pos_8", char_pos_8)
+            ds_map_add (_start,"char_pos_9", char_pos_9)
+            ds_map_add (_start,"char_pos_10", char_pos_10)
+            ds_map_add (_start,"char_pos_11", char_pos_11)
+            
+           
+           
+            
+            //wrapper
+            var _wrapper = ds_map_create();
+            ds_map_add_list(_wrapper,"START" ,_start_list);
+            
+            //Save all
+            var _string = json_encode(_wrapper);
+            SaveStringToFile( "startgame.sav", _string);
+            
+            //Nuke Data
+            ds_map_destroy(_wrapper);
+        }
+        room_goto(1)
+    }
+}
+
+for(i = 0; i &lt; array_length_2d(char,9); i++)
+{
+    draw_text(50, 450 + i * 30, char[9,i])
+}
+
+draw_text(200,450, char[0,editor_x[0]])
+draw_text(200,480, char[1,editor_x[1]])
+draw_text(200,510, char[10,editor_x[2]])
+draw_text(200,540, char[3,editor_x[3]])
+draw_text(200,570, char[11,editor_x[4]])
+draw_text(200,600, editor_x[5])
+draw_text(200,630, editor_x[6])
+draw_text(200,660, editor_x[7])
+draw_text(200,690, editor_x[8])
+
+draw_text(200,750, "press Space to Complete")
 
 
 

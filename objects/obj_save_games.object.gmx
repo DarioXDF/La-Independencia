@@ -75,8 +75,15 @@ switch (ii)
            {
                room_goto(7)
            }
+        else
+           {
+            {
+                menu1 = 1
+            }
+           }
         }
-        break
+        
+        break;
     }
 
         
@@ -99,6 +106,7 @@ scr_main_menu(4,1,0)
             if(keyboard_check_released(vk_enter))
             {
                 menu1 = 0
+                ii = 1
             }
          break;
         }
@@ -164,13 +172,7 @@ switch (ii)
     
     case 2:
         draw_text(170,70,"---&gt;")
-        if(keyboard_check_released(vk_enter))
-        {
-           if(file_exists("savedgame.sav")) 
-           {
-                menu1 = 1
-           }
-        }
+       
     break;
     }
 
