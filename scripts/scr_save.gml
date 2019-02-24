@@ -39,6 +39,9 @@ with (obj_parent_save)
         //Inventory
         ds_map_add (_map,"obj_ship.gold",obj_ship.gold);
         
+    //Player
+        ds_map_add (_map,"obj_ship.user_name",obj_ship.user_name);
+        
     //Port   
         //Island Economy
         ds_map_add (_map,"obj_port.gold",obj_port.gold);

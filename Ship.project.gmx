@@ -17,6 +17,39 @@
       <sprites name="msic">
         <sprite>sprites\spr_curser</sprite>
       </sprites>
+      <sprites name="Player">
+        <sprites name="Hair">
+          <sprites name="Standard">
+            <sprite>sprites\spr_hair_placeholder_black</sprite>
+            <sprite>sprites\spr_hair_placeholder_yellow</sprite>
+            <sprite>sprites\spr_hair_placeholder_green</sprite>
+            <sprite>sprites\spr_hair_placeholder_purplegray</sprite>
+          </sprites>
+        </sprites>
+        <sprites name="Head">
+          <sprite>sprites\spr_head_placeholder</sprite>
+          <sprite>sprites\spr_head_placeholder_1</sprite>
+          <sprite>sprites\spr_head_placeholder_2</sprite>
+          <sprite>sprites\spr_head_placeholder_3</sprite>
+        </sprites>
+        <sprites name="Eyes">
+          <sprites name="standard">
+            <sprite>sprites\spr_eyes_placeholder_white</sprite>
+            <sprite>sprites\spr_eyes_placeholder_green</sprite>
+            <sprite>sprites\spr_eyes_placeholder_darkblue</sprite>
+            <sprite>sprites\spr_eyes_placeholder_purplegray</sprite>
+          </sprites>
+        </sprites>
+        <sprites name="Body">
+          <sprite>sprites\spr_body_placeholder</sprite>
+          <sprite>sprites\spr_body_placeholder_1</sprite>
+          <sprite>sprites\spr_body_placeholder_2</sprite>
+          <sprite>sprites\spr_body_placeholder_3</sprite>
+        </sprites>
+        <sprites name="Mouth">
+          <sprite>sprites\spr_mouth_placeholder</sprite>
+        </sprites>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -48,7 +81,8 @@
       <object>objects\obj_main_menu</object>
       <object>objects\obj_option_menu</object>
       <object>objects\obj_controlls_menu</object>
-      <object>objects\obj_input</object>
+      <object>objects\obj_save_games</object>
+      <object>objects\obj_new_game</object>
     </objects>
     <objects name="Islands">
       <objects name="Ports">
@@ -58,12 +92,15 @@
       <object>objects\obj_island</object>
     </objects>
     <objects name="Tools">
-      <object>objects\obj_parent_save</object>
-      <object>objects\obj_start</object>
-      <object>objects\obj_default_info</object>
       <objects name="Save/Load">
         <object>objects\obj_save</object>
         <object>objects\obj_load</object>
+        <object>objects\obj_parent_save</object>
+      </objects>
+      <objects name="Setup">
+        <object>objects\obj_start</object>
+        <object>objects\obj_default_info</object>
+        <object>objects\obj_input</object>
       </objects>
     </objects>
   </objects>
@@ -74,6 +111,8 @@
     <room>rooms\room3</room>
     <room>rooms\room4</room>
     <room>rooms\room5</room>
+    <room>rooms\room6</room>
+    <room>rooms\room7</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

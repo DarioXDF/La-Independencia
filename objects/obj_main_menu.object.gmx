@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>menu = 0
+            <string>X = 0
 ii = 1      //position of curser
 start = 1   //start positon of curser
 
@@ -56,28 +56,35 @@ start = 1   //start positon of curser
           <argument>
             <kind>1</kind>
             <string>
-scr_main_menu()
+scr_main_menu(0,0,0)
 
 
 
  switch (ii)
  {
     case 1:
-        if(keyboard_check_pressed(vk_enter))
+        if(keyboard_check_released(vk_enter))
         {
-            room_goto(1)        
+            if(global.first_start = 1)
+            {
+            room_goto(6)
+            }
+            else
+            {
+            room_goto(1)
+            }        
         }
     break;
     
     case 2:
-        if(keyboard_check_pressed(vk_enter))
+        if(keyboard_check_released(vk_enter))
         {
             room_goto(3)       
         }
     break;
     
     case 3:
-        if(keyboard_check_pressed(vk_enter))
+        if(keyboard_check_released(vk_enter))
         {
             game_end()        
         }
@@ -112,7 +119,7 @@ scr_main_menu()
           <argument>
             <kind>1</kind>
             <string>
-draw_text(50,50,menu)
+
 draw_text(50,100,ii)    //Draw Curser Position
 
 
