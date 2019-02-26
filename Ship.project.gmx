@@ -71,10 +71,12 @@
       <scripts name="Crus0e">
         <script>scripts\scr_time.gml</script>
         <script>scripts\scr_check_ports.gml</script>
-        <script>scripts\SaveStringToFile.gml</script>
-        <script>scripts\loadJSONFromFile.gml</script>
-        <script>scripts\scr_load.gml</script>
-        <script>scripts\scr_save.gml</script>
+        <scripts name="Save/Load">
+          <script>scripts\scr_save.gml</script>
+          <script>scripts\scr_load.gml</script>
+          <script>scripts\loadJSONFromFile.gml</script>
+          <script>scripts\SaveStringToFile.gml</script>
+        </scripts>
       </scripts>
     </scripts>
     <script>scripts\Room_Info.gml</script>
