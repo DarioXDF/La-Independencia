@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>input = "Warte auf Input"
+            <string>//Crus0e
+
+input = "Warte auf Input"
 input_abfrage = 1
 vk_input = 1
 
@@ -52,7 +54,9 @@ vk_input = 1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(input_abfrage = 1)
+            <string>//Crus0e
+
+if(input_abfrage = 1)
 {
     scr_get_input();
 }
@@ -122,7 +126,9 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(50,150,input)
+            <string>//Crus0e
+
+draw_text(50,150,input)
 draw_text(50,200,input_abfrage)
 </string>
           </argument>

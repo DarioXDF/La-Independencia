@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>X = 0
+            <string>//Crus0e
+
+X = 0
 menu1 = 0
 ii = 1
 
@@ -51,7 +53,9 @@ ii = 1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(menu1 = 0)
+            <string>//Crus0e
+
+if(menu1 = 0)
 {
 scr_main_menu(3,0,0)
 
@@ -147,7 +151,9 @@ if(keyboard_check_released(global.c_esc))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(50,50,menu1)
+            <string>//Crus0e
+
+draw_text(50,50,menu1)
 if(menu1 = 0)
 {
 switch (ii)

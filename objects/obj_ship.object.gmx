@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>//Crus0e
+
 user_name = ""
 first_name = ""
 last_name = ""
@@ -157,7 +158,9 @@ debug_port = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_check_ports();  
+            <string>//Crus0e
+
+scr_check_ports();  
 
 
 //speed berechnung
@@ -260,7 +263,9 @@ if(hp &lt;= 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string> if(trade_menu == 1)
+            <string>//Crus0e
+ 
+ if(trade_menu == 1)
         {
             
             //Menu
@@ -304,7 +309,9 @@ if(hp &lt;= 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hp = hp - (sp * 0.01) * max_hp
+            <string>//Crus0e
+
+hp = hp - (sp * 0.01) * max_hp
 sp = 0
 
 </string>
@@ -329,7 +336,9 @@ sp = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Debug Mode
+            <string>//Crus0e
+
+//Debug Mode
 
 if(Debug = 1)
 {

@@ -1,3 +1,4 @@
+
 global.c_speed_up = ord("W")
 global.c_speed_down = ord("S")
 global.c_left = ord("A")

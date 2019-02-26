@@ -1,3 +1,4 @@
+
 //arrays
 menu_interaction[0] = "Trade"
 menu_interaction[1] = "Exit"

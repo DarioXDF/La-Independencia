@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Island Econemy
+            <string>//Crus0e
+
+//Island Econemy
 gold = 50;
 
 //Inventory Island
@@ -64,7 +66,9 @@ work_power = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>work_power = (Worker * 2 / Mines) / 100
+            <string>//Crus0e
+
+work_power = (Worker * 2 / Mines) / 100
 
 Iron_mine = Iron_mine + (work_power * 10 / 60 / 30) // Iron = Produktion in % * Anzahl der Ware / Sekunden / Frames
 

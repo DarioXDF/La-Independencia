@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Island Economy
+            <string>//Crus0e
+
+//Island Economy
 gold = 50;
 
 //Island Inventory

@@ -56,20 +56,26 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="Menus">
-      <script>scripts\scr_main_menu.gml</script>
-      <script>scripts\scr_interaction_menu.gml</script>
+      <scripts name="Crus0e">
+        <script>scripts\scr_interaction_menu.gml</script>
+        <script>scripts\scr_main_menu.gml</script>
+      </scripts>
     </scripts>
     <scripts name="inputs">
-      <script>scripts\scr_controlls.gml</script>
-      <script>scripts\scr_get_input.gml</script>
+      <scripts name="Crus0e">
+        <script>scripts\scr_controlls.gml</script>
+        <script>scripts\scr_get_input.gml</script>
+      </scripts>
     </scripts>
     <scripts name="tools">
-      <script>scripts\scr_check_ports.gml</script>
-      <script>scripts\scr_time.gml</script>
-      <script>scripts\SaveStringToFile.gml</script>
-      <script>scripts\loadJSONFromFile.gml</script>
-      <script>scripts\scr_save.gml</script>
-      <script>scripts\scr_load.gml</script>
+      <scripts name="Crus0e">
+        <script>scripts\scr_time.gml</script>
+        <script>scripts\scr_check_ports.gml</script>
+        <script>scripts\SaveStringToFile.gml</script>
+        <script>scripts\loadJSONFromFile.gml</script>
+        <script>scripts\scr_load.gml</script>
+        <script>scripts\scr_save.gml</script>
+      </scripts>
     </scripts>
     <script>scripts\Room_Info.gml</script>
   </scripts>

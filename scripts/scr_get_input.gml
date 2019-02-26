@@ -1,3 +1,5 @@
+//Crus0e
+
 //Buchstaben A-Z
 
     if(keyboard_check_pressed(ord("Q")))

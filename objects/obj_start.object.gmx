@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_controlls() //initialize controlls
+            <string>//Crus0e
+
+scr_controlls() //initialize controlls
 global.pos = 0  
 alarm[0] = 30   //Time of Splash screen
 global.first_start = 1
@@ -55,7 +57,9 @@ global.last_name = ""
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(4); //Main Menu
+            <string>//Crus0e
+
+room_goto(4); //Main Menu
 </string>
           </argument>
         </arguments>

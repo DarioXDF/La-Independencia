@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>name_set = 0
+            <string>//Crus0e
+
+name_set = 0
 user_name = ""
 first_name = ""
 last_name = ""
@@ -156,7 +158,9 @@ pos_last[20] = 1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_get_input()
+            <string>//Crus0e
+
+scr_get_input()
 switch(curser_line)
 {   
     case 0:
@@ -223,7 +227,9 @@ switch(curser_line)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(50,50,"Enter user Name:")
+            <string>//Crus0e
+
+draw_text(50,50,"Enter user Name:")
 for(i = 0; i &lt; 20; i++)
 {
     draw_text(200 + 15 * i,52,"_")
