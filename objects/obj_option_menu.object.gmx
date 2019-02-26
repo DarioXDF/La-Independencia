@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>//Crus0e
+
 ii = 1
 
 
@@ -51,7 +52,9 @@ ii = 1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_main_menu(1,0,0)
+            <string>//Crus0e
+
+scr_main_menu(1,0,0)
 switch (ii)
     {
         case 1:
@@ -99,7 +102,9 @@ if(keyboard_check_pressed(global.c_esc))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>switch (ii)
+            <string>//Crus0e
+
+switch (ii)
  {
     case 1:
         draw_text(170,50,"---&gt;")

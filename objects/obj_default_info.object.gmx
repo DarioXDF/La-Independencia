@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>gold = 0                
+            <string>//Crus0e
+
+gold = 0                
 frame = 0               //bei save game ersetzen
 s = 0
 m = 0
@@ -54,7 +56,9 @@ countdown = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_time()
+            <string>//Crus0e
+
+scr_time()
 </string>
           </argument>
         </arguments>
