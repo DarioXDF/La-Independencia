@@ -63,6 +63,46 @@ with (obj_parent_save)
         //Islaned Inventory
         ds_map_add (_map,"obj_port_1.Iron",obj_port_1.Iron);
         
+    //Charakter
+        b = obj_ship.b
+        for(i = 0; i < b  ; i++ )
+                    {
+                        for(iii = 0; iii < obj_ship.char_pos[i] ; iii++)
+                        {
+                            position = string("char[") + string(i) + string(",") + string(iii) + string("]")
+                            ds_map_add (_map, position, obj_ship.char[i,iii])
+                            
+                        }
+                        
+                        
+                        
+                    }
+                    d = array_length_1d(obj_ship.editor_x)
+                    for(i = 0; i < array_length_1d(obj_ship.editor_x); i++)
+                    {
+                        position = string("editor_x[") + string(i) + string("]")
+                        ds_map_add (_map, position, obj_ship.editor_x[i])
+                    }
+                   
+            ds_map_add (_map,"user_name", obj_ship.user_name)
+            ds_map_add (_map,"first_name", obj_ship.first_name)
+            ds_map_add (_map,"last_name", obj_ship.last_name)
+            ds_map_add (_map,"b", obj_ship.b)
+            ds_map_add (_map,"d", obj_ship.d)
+            ds_map_add (_map,"char_pos_0", obj_ship.char_pos[0])
+            ds_map_add (_map,"char_pos_1", obj_ship.char_pos[1])
+            ds_map_add (_map,"char_pos_2", obj_ship.char_pos[2])
+            ds_map_add (_map,"char_pos_3", obj_ship.char_pos[3])
+            ds_map_add (_map,"char_pos_4", obj_ship.char_pos[4])
+            ds_map_add (_map,"char_pos_5", obj_ship.char_pos[5])
+            ds_map_add (_map,"char_pos_6", obj_ship.char_pos[6])
+            ds_map_add (_map,"char_pos_7", obj_ship.char_pos[7])
+            ds_map_add (_map,"char_pos_8", obj_ship.char_pos[8])
+            ds_map_add (_map,"char_pos_9", obj_ship.char_pos[9])
+            ds_map_add (_map,"char_pos_10", obj_ship.char_pos[10])
+            ds_map_add (_map,"char_pos_11", obj_ship.char_pos[11])
+            
+        
 }
 
 //Wrap the root list up in a map

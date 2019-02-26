@@ -521,6 +521,8 @@ if(char_editor = 1)
     }
     draw_text(20,450 + editor_y * 30, "---&gt;")
     
+    
+//Save
     if(keyboard_check_released(vk_space))
     {
         var _start_list = ds_list_create();
@@ -549,7 +551,7 @@ if(char_editor = 1)
                                       
                     
                     
-                    for(i = 0; i &lt; array_height_2d(char)  ; i++ )
+                    for(i = 0; i &lt; b  ; i++ )
                     {
                         for(iii = 0; iii &lt; array_length_2d(char,i) ; iii++)
                         {
@@ -586,7 +588,7 @@ if(char_editor = 1)
             ds_map_add (_start,"char_pos_10", char_pos_10)
             ds_map_add (_start,"char_pos_11", char_pos_11)
             
-           
+            
            
             
             //wrapper

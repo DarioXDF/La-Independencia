@@ -57,6 +57,44 @@ if (file_exists(save_name))
             obj_port_1.gold = _map[? "obj_port_1.gold"]
             //Islaned Inventory
             obj_port_1.Iron = _map[? "obj_port_1.Iron"]
+            
+        //Charakter
+                obj_ship.user_name = _map[? "user_name"]
+                obj_ship.first_name = _map[? "first_name"]
+                obj_ship.last_name = _map[? "last_name"]
+                obj_ship.b = _map[? "b"]
+                obj_ship.d = _map[? "d"]
+                obj_ship.char_pos[0] = _map[? "char_pos_0"]
+                obj_ship.char_pos[1] = _map[? "char_pos_1"]
+                obj_ship.char_pos[2] = _map[? "char_pos_2"]
+                obj_ship.char_pos[3] = _map[? "char_pos_3"]
+                obj_ship.char_pos[4] = _map[? "char_pos_4"]
+                obj_ship.char_pos[5] = _map[? "char_pos_5"]
+                obj_ship.char_pos[6] = _map[? "char_pos_6"]
+                obj_ship.char_pos[7] = _map[? "char_pos_7"]
+                obj_ship.char_pos[8] = _map[? "char_pos_8"]
+                obj_ship.char_pos[9] = _map[? "char_pos_9"]
+                obj_ship.char_pos[10] = _map[? "char_pos_10"]
+                obj_ship.char_pos[11] = _map[? "char_pos_11"]
+                
+                for(i = 0; i < b; i++ )
+                    {
+                        for(iii = 0; iii < char_pos[i]; iii++)
+                        {
+                            position = string("char[") + string(i) + string(",") + string(iii) + string("]")
+                            obj_ship.char[i,iii] = _map[? string("char[") + string(i) + string(",") + string(iii) + string("]")]
+                            
+                        }
+                        
+                        
+                        
+                    }
+                    
+                for(i = 0; i < d ; i++)
+                    {
+                        position = string("editor_x[") + string(i) + string("]")
+                        obj_ship.editor_x[i] = _map[? position]
+                    }
     }
         
     }
