@@ -102,10 +102,8 @@ ii = 1
 
 gold = 0;
 
-//Debug
 
-Debug = 0;
-debug_port = 0;
+
 
 
 
