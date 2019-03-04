@@ -1,4 +1,4 @@
 # Polygon Game Studio
 La Independencia
 
-Version: 0.0.0-06
+Version: 0.0.0-08
