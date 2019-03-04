@@ -1,4 +1,4 @@
 # Polygon Game Studio
-ship game project
+La Independencia
 
 Version: 0.0.0-06
