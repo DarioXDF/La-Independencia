@@ -151,10 +151,18 @@
             }
         },
         {
+            "Key": "ac8c44a8-3174-4336-bf06-44b0daafae96",
+            "Value": {
+                "id": "1c26c794-749f-468e-9ed5-e0f9796d7579",
+                "resourcePath": "objects\\obj_buttonAC\\obj_buttonAC.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b28839e3-de60-4cb1-bce7-be50a021d278",
             "Value": {
                 "id": "9669499b-25bd-46f6-b033-0955abc17e4a",
-                "resourcePath": "objects\\obj_button\\obj_button.yy",
+                "resourcePath": "objects\\obj_buttonIV\\obj_buttonIV.yy",
                 "resourceType": "GMObject"
             }
         },

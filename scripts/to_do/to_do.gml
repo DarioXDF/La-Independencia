@@ -1,7 +1,7 @@
 ///What you have to do
 /*
 1.  Power-Up's
-2.  Verschiedene Upgerades mit namen
+2.  Verschiedene Upgrades mit namen
 3.  Idle Clicking/Mining
 4.  Bessere Bilder
 5.  Progress Bars
