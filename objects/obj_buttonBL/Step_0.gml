@@ -1,6 +1,5 @@
 /// @description Hier Beschreibung einfügen
 // Sie können Ihren Code in diesem Editor schreiben
-
 pct = obj_gml.coins/costs;
 if(pct < 0.2){
 	image_index = 0;
@@ -27,9 +26,9 @@ if(pct < 0.2){
 }
 if (bought = true) {
 	if (timer < 0) {
+		loan = ln(obj_gml.coins)*lvl;
+		obj_gml.coins += round(loan);
 		timer = 200;
-		instance_destroy(obj_coin);
-		obj_gml.coins += coinsAddedD;
 	} else {
 		timer--;
 	}
