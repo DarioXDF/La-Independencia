@@ -1,5 +1,6 @@
 //Crus0e
 
+//Draw Lines
 draw_text(50,50,string_hash_to_newline("Enter user Name:"))
 for(i = 0; i < 20; i++)
 {
@@ -391,9 +392,3 @@ draw_text(200,660, string_hash_to_newline(editor_x[7]))
 draw_text(200,690, string_hash_to_newline(editor_x[8]))
 
 draw_text(200,750, string_hash_to_newline("press Space to Complete"))
-
-
-
-
-
-
