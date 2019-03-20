@@ -265,9 +265,10 @@ draw_sprite_ext(char[2,editor_x[2]],image_index, char_x,char_y, char_scale, char
 
 if(char_editor = 1)
 {
-    if(keyboard_check_released(global.c_menu_down) && editor_y != 8)
+	
+    if(keyboard_check_pressed(global.c_menu_down) && editor_y != 8)
     {
-        editor_y++
+       editor_y++
     }
     
     if(keyboard_check_released(global.c_menu_up) && editor_y != 0)
