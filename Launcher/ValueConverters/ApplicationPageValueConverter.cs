@@ -16,6 +16,8 @@ namespace Launcher
                 case ApplicationPage.Login:
                     return new LoginPage();
 
+                case ApplicationPage.MainPage:
+                    return new MainPage();
                 default:
                     Debugger.Break();
                     return null;

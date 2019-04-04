@@ -8,5 +8,6 @@
         /// The initial login page
         /// </summary>
         Login = 0,
+        MainPage = 1,
     }
 }

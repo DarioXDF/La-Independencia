@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-F:\Games\Launcher\obj\Debug\
+F:\Games\GameLauncher\polygon-game-studio\Launcher\obj\Debug\
 Launcher
 none
 false
 DEBUG;TRACE
-F:\Games\Launcher\App.xaml
-7550430264
+F:\Games\GameLauncher\polygon-game-studio\Launcher\App.xaml
+8-964509931
 
-13261792783
-15-598140753
-Pages\LoginPage.xaml;MainWindow.xaml;Styles\Colors.xaml;Styles\Buttons.xaml;Styles\Windows.xaml;Styles\Texts.xaml;Styles\Fonts.xaml;
+14-1093415111
+151922633981
+Pages\LoginPage.xaml;MainWindow.xaml;Pages\MainPage.xaml;Styles\Colors.xaml;Styles\Buttons.xaml;Styles\Windows.xaml;Styles\Texts.xaml;Styles\Fonts.xaml;
 
 False
 
