@@ -8,28 +8,42 @@
       d:DesignHeight="600" d:DesignWidth="900"
       Title="MainPage">
 
-    <Border Background="{StaticResource WordBlueBrush}">
+    <Border>
+        <Border.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0.1, 1">
+                <GradientStop Color="{StaticResource WordOrange}" Offset="0.0" />
+                <GradientStop Color="{StaticResource WordBlue}" Offset="0.6" />
+            </LinearGradientBrush>
+        </Border.Background>
         <Grid>
-            <Grid.Background>
-                <ImageBrush TileMode="Tile" ViewportUnits="Absolute" Viewport="0 0 500 500" ImageSource="/Images/Backgrounds/emoji-background.png" />
-            </Grid.Background>
+            <!--<Grid.Background>
+                 <ImageBrush TileMode="Tile" ViewportUnits="Absolute" Viewport="0 0 500 500" ImageSource="/Images/Backgrounds/emoji-background.png" />
+            </Grid.Background>-->
 
             <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
                 <StackPanel VerticalAlignment="Bottom">
-                    <Grid Grid.Column="0" Panel.ZIndex="1">
+                    <Grid Panel.ZIndex="1" HorizontalAlignment="Center">
 
+                        <Grid.ColumnDefinitions>
+                            <!-- Icon -->
+                            <ColumnDefinition Width="800" />
+                        </Grid.ColumnDefinitions>
+
+                        <Image Grid.Column="0" Opacity="1" x:Name="Slider" Stretch="Fill" Source="/Images/Slider/SkyR34_Toron.png" MaxWidth="800" />
+                        <Image Grid.Column="0" Opacity="0" x:Name="Slider2" Stretch="Fill" Source="/Images/Slider/SKYR34BG.png" MaxWidth="800" />
+                        <Image Grid.Column="0" Opacity="0" x:Name="Slider3" Stretch="Fill" Source="/Images/Slider/Toron.jpg" MaxWidth="800" />
+                    </Grid>
+
+                    <Grid Panel.ZIndex="1">
                         <Grid.ColumnDefinitions>
                             <!-- Icon -->
                             <ColumnDefinition Width="Auto" />
                             <!-- Title -->
                             <ColumnDefinition Width="*" />
-                            <!-- Windows Button -->
-                            <ColumnDefinition Width="Auto" />
-
                         </Grid.ColumnDefinitions>
 
                         <Label x:Name="lblStatus" Grid.Column="0" Foreground="#000" FontSize="{StaticResource FontSizeLarge}" HorizontalAlignment="Center" VerticalAlignment="Center" Panel.ZIndex="1" FontFamily="Shadows Into Light">0</Label>
-                        <ProgressBar x:Name="downloadProgressBar" Grid.Column="0" Height="40" Width="600" Minimum="0" Maximum="100" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="15 0 0 15"/>
+                        <ProgressBar x:Name="downloadProgressBar" Grid.Column="0" Height="40" Width="600" Minimum="0" Maximum="100" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="15 0 0 15" ValueChanged="downloadProgressBar_ValueChanged"/>
                         <Button x:Name="btnDownload" FontSize="{StaticResource FontSizeRegular}" Grid.Column="1" Height="40" Width="200" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="15" Content="Download" Click="Button_Click"/>
 
                     </Grid>

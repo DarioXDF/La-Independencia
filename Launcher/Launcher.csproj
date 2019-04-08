@@ -203,6 +203,15 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Slider\Toron.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Slider\SKYR34BG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Slider\SkyR34_Toron.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Fody.3.3.2\build\Fody.targets" Condition="Exists('packages\Fody.3.3.2\build\Fody.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

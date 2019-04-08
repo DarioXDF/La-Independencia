@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Launcher.exe" size="471544">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Launcher.exe" size="5396472">
       <assemblyIdentity name="Launcher" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>FP7fx5Rw0YSSUEtP5Qi1kwUt35S/FTYWRyd52GOEUuo=</dsig:DigestValue>
+        <dsig:DigestValue>CrrhWg0ULsgAcmnkzWOW/AYLMr/iCUmLxRsndzgExG8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -87,13 +87,13 @@
       <dsig:DigestValue>ZY9t3ukRG6dWXtrxfceuaWf0D3N5gn3EYT+bnqHfep4=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Launcher.exe.config" size="189">
+  <file name="Launcher.exe.config" size="316">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>rl5/qDc7Jz+tB+BIbOv9iMGPlRe6YJwrjmU09dnlPcs=</dsig:DigestValue>
+      <dsig:DigestValue>MpYNG3zl0HS0oHQPVIFG1Nv3APS/6UI+1XbK36ZIHak=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>
