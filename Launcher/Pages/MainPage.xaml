@@ -43,7 +43,7 @@
                         </Grid.ColumnDefinitions>
 
                         <Label x:Name="lblStatus" Grid.Column="0" Foreground="#000" FontSize="{StaticResource FontSizeLarge}" HorizontalAlignment="Center" VerticalAlignment="Center" Panel.ZIndex="1" FontFamily="Shadows Into Light">0</Label>
-                        <ProgressBar x:Name="downloadProgressBar" Grid.Column="0" Height="40" Width="600" Minimum="0" Maximum="100" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="15 0 0 15" ValueChanged="downloadProgressBar_ValueChanged"/>
+                        <ProgressBar x:Name="downloadProgressBar" Grid.Column="0" Height="40" Width="600" Minimum="0" Maximum="100" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="15 0 0 15"/>
                         <Button x:Name="btnDownload" FontSize="{StaticResource FontSizeRegular}" Grid.Column="1" Height="40" Width="200" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="15" Content="Download" Click="Button_Click"/>
 
                     </Grid>
