@@ -1,0 +1,1 @@
+speed = sp * ship_speed;

@@ -1,0 +1,9 @@
+sp = 0;
+max_hp = 1000;
+hp = max_hp;
+ship_speed = 0.10;  //shiff speed für basic_ship
+ship_turn = 5;      //shiff turn_speed für basic_ship
+port = obj_default_info;
+port_id = 0
+trade_menu = 0
+ii = 1

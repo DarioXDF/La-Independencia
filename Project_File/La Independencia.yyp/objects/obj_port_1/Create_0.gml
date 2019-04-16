@@ -1,8 +1,4 @@
 //Crus0e
 
-//Island Economy
-gold = 50;
-
-//Island Inventory
-Iron = 0;
+scr_obj_port_1_vars();
 
