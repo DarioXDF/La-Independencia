@@ -60,6 +60,13 @@
                                     <!-- Title Bar -->
                                     <Grid Grid.Column="0" Panel.ZIndex="1">
 
+                                        <Grid.Background>
+                                            <LinearGradientBrush StartPoint="0,0" EndPoint="2.3, 1">
+                                                <GradientStop Color="{StaticResource WordOrange}" Offset="0.0" />
+                                                <GradientStop Color="{StaticResource WordBlue}" Offset="1.0" />
+                                            </LinearGradientBrush>
+                                        </Grid.Background>
+
                                         <Grid.ColumnDefinitions>
                                             <!-- Icon -->
                                             <ColumnDefinition Width="Auto" />
@@ -79,11 +86,11 @@
                                         <Viewbox Grid.Column="0" Grid.ColumnSpan="3" Margin="5">
                                             <StackPanel>
                                                 <TextBlock FontFamily="Shadows Into Light" FontSize="{StaticResource FontSizeRegular}" Margin="0,0,0,-5">
-                                                    <Run Text="La Independencia Launcher" Foreground="{StaticResource WordOrangeBrush}" />
+                                                    <Run Text="La Independencia Launcher" Foreground="{StaticResource ForegroundVeryDarkBrush}" FontFamily="Shadows Into Light" />
                                                     <!--<Run Text="Independencia" Foreground="{StaticResource WordBlueBrush}" />
                                                     <Run Text="Launcher" Foreground="{StaticResource WordRedBrush}" />-->
                                                 </TextBlock>
-                                                <TextBlock Text="by Toron" Foreground="{StaticResource ForegroundDarkBrush}" TextAlignment="Center" />
+                                                <TextBlock Text="by Polygon Game Studio" Foreground="{StaticResource ForegroundLightBrush}" TextAlignment="Center" />
                                             </StackPanel>
                                             <!--<TextBlock Style="{StaticResource HeaderText}" Text="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Title, FallbackValue='La Independencia Launcher'}" />-->
                                         </Viewbox>
@@ -121,10 +128,10 @@
                                     <!-- Page Content -->
                                     <Border Grid.Row="1" Padding="{Binding InnerContentPadding}" Background="{StaticResource WordBlueBrush}">
                                         <Border>
+                                            <ContentPresenter Content="{TemplateBinding Content}" />
                                             <Border.Background>
                                                 <ImageBrush TileMode="Tile" ViewportUnits="Absolute" Viewport="0 0 500 500" ImageSource="/Images/Backgrounds/emoji-background.png" />
                                             </Border.Background>
-                                            <ContentPresenter Content="{TemplateBinding Content}" />
                                         </Border>
                                     </Border>
 

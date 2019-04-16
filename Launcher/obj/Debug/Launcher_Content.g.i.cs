@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/backgrounds/emoji-background.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/slider/skyr34_toron.png")]
 
 
