@@ -53,7 +53,8 @@ namespace Launcher
             client.DownloadFileAsync(new Uri("https://github.com/DarioXDF/polygon-game-studio/archive/master.zip"), @"C:\Users\Crus0e\Desktop\LauncherDownload\master.zip");
             // Save document
             string filename = "master.zip";
-        }private void client_DownloadFileCompleted(object sender, AsyncCompletedEventArgs e)
+        }
+        private void client_DownloadFileCompleted(object sender, AsyncCompletedEventArgs e)
         {
             lblStatus.Content = "Complete!";
         }
@@ -61,7 +62,7 @@ namespace Launcher
         private void client_DownloadProgressChanged(object sender, DownloadProgressChangedEventArgs e)
         {
             downloadProgressBar.Maximum = 38530886;
-            lblStatus.Content = e.BytesReceived / 1000000 + "mb / " + 38530886/1000000 + "mb";
+            lblStatus.Content = e.BytesReceived / 1000000 + "mb / " + 38530886 / 1000000 + "mb";
             downloadProgressBar.Value = e.BytesReceived;
         }
 
