@@ -1,10 +1,5 @@
 //Crus0e
 
-draw_text(50,100,string_hash_to_newline(ii))    //Draw Curser Position
-
-
-
- 
  switch (ii)
  {
     case 1:

@@ -13,6 +13,7 @@ switch(curser_line)
                 break;
             }
             input = 0
+			
     
         }
     break;
@@ -27,7 +28,7 @@ switch(curser_line)
                 break;
             }
             input = 0
-    
+			
         }
     break;
     
@@ -41,6 +42,7 @@ switch(curser_line)
                 break;
             }
             input = 0
+			
     
         }
     break;

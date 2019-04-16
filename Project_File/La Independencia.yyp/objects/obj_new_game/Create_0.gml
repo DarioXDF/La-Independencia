@@ -14,7 +14,9 @@ curser_line = 0
 char_editor = 0
 b = 0 // anzahl der einträge
 c = 0 // position in array
-
+length_of_chars = 0
+length_of_chars_first = 0
+length_of_chars_last = 0
 
 
 char_x = 200
