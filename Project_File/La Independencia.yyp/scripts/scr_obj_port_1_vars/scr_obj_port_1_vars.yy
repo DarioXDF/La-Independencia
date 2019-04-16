@@ -1,8 +1,8 @@
 {
-    "id": "9114a8d4-2678-4aa5-9ab3-b8742734a5eb",
+    "id": "fa22a05b-b078-4d13-a7da-a8ccb0c84a67",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "Room_Info",
+    "name": "scr_obj_port_1_vars",
     "IsCompatibility": false,
     "IsDnD": false
 }

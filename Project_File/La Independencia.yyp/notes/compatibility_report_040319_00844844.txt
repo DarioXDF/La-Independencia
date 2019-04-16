@@ -1,8 +1,0 @@
-Umwandlung von GML-Skript: ${project_dir}\scripts\scr_load\scr_load.gml
-Umgewandelte Beschreibung /// @description  @arg "savefile_name.sav"
-
-Umwandlung von GML-Skript: ${project_dir}\scripts\scr_save\scr_save.gml
-Umgewandelte Beschreibung /// @description  @arg "savefile_name.sav"
-
-Windows NSIS Installationsskript wurde aufgrund Änderungen in GameMaker Studio 2 auf die Standardeinstellungen zurückgesetzt.
-Spielgeschwindigkeit auf 30 eingestellt

@@ -7,7 +7,7 @@
         "f19e6a01-8962-4b1e-b052-bb99832e2953"
     ],
     "filterType": "GMScript",
-    "folderName": "Menus",
+    "folderName": "Menu_tools",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
