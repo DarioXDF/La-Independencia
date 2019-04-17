@@ -236,7 +236,7 @@ switch(curser_line)
     case 2:
         if(pos_last[ii - 1] != 0)
         {
-            if(ii != 21) ii++;
+            if(ii != 21) ii++; 
         }
     break;
        

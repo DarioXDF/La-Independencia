@@ -40,7 +40,7 @@ with (obj_parent_save)
         ds_map_add (_map,"obj_ship.gold",obj_ship.gold);
         
     //Player
-        ds_map_add (_map,"obj_ship.user_name",obj_ship.user_name);
+        ds_map_add (_map,"obj_character.user_name",obj_ship.user_name);
         
     //Port   
         //Island Economy
